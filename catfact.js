@@ -9,7 +9,7 @@ button.addEventListener("click", async () => {
         let res = await axios.get(url) ; 
         let catFact =  res.data.fact ; 
         console.log(catFact) ; 
-        para.innerHTML = catFact ; 
+        para.innerHTML = `"${catFact}"` ;   
     }catch(err){
         console.log("error is : ", err) ;
     }
